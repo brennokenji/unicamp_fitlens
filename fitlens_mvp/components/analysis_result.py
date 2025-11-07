@@ -13,9 +13,12 @@ def show_analysis_result(analysis_data: dict):
         st.metric("Acurácia:", f'{analysis_data['accuracy']}%')
         st.metric('Quantidade de repetição:', analysis_data['repetitions'])
     with col2:
-        st.metric('Movimento:', analysis_data['movement_type'])
-        st.metric('Erro detectado:', analysis_data['issues_detected'])
-        st.metric('Músculo em risco:', analysis_data['muscle_risk'])
+        st.write('### Movimento:')
+        st.write(f'##### {analysis_data['movement_type']}')
+        st.write('### Erro detectado:')
+        st.write(f'##### {analysis_data['issues_detected']}')
+        st.write('### Músculo em risco:')
+        st.write(f'##### {analysis_data['muscle_risk']}')
 
     st.markdown('### 💡 Feedbacks')
     st.write(analysis_data['feedback'])
