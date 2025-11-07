@@ -9,6 +9,8 @@ def analyze_video(video_file):
         'movements_detected': 1,
         'accuracy': random.randint(70, 80),
         'repetitions': 8,
+        'movement_type': 'Supino Reto com Barra',
+        'muscle_risk': 'Peitoral Maior',
         'issues_detected': 'Amplitude de movimento reduzida',
         'feedback': 'Abaixe a barra até próximo ao peito, mantendo o controle em todo o movimento.'
     }
